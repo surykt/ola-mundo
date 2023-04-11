@@ -12,6 +12,10 @@
   color: var(--cor-fonte-principal);
 }
 
+.featuredLink {
+  text-decoration: underline;
+}
+
 @media (max-width: 744px) {
   .navigation {
     height: 72px;
