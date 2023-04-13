@@ -1,4 +1,4 @@
-.banner {
+.Banner {
   padding: 3rem 7.5rem 6.25rem;
   background-color: var(--azul-escuro);
   color: var(--branco);
@@ -6,26 +6,26 @@
   grid-template-columns: 1fr 1fr;
 }
 
-.titulo {
+.title {
   font-family: var(--fonte-secundaria);
   font-size: 4rem;
   margin-top: 4.875rem;
   margin-bottom: 2rem;
 }
 
-.paragrafo {
+.paragraph {
   font-family: var(--fonte-secundaria);
   font-size: 1.5rem;
   line-height: 2rem;
   margin-bottom: 2rem;
 }
 
-.imagens {
+.images {
   position: relative;
   height: 406px;
 }
 
-.imagens > .minhaFoto {
+.images > .myFoto {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -33,7 +33,7 @@
   border-radius: 50%;
 }
 
-.imagens > .circuloColorido {
+.images > .coloredCircle {
   position: absolute;
   right: 7vw;
   bottom: 2.2vw;
@@ -45,24 +45,24 @@
     padding: 3.5rem 1.5rem;
   }
 
-  .titulo {
+  .title {
     margin-top: 0;
     margin-bottom: 1.5rem;
   }
 
-  .paragrafo {
+  .paragraph {
     margin-bottom: 1.5rem;
   }
 
-  .imagens {
+  .images {
     height: 338px;
   }
 
-  .imagens > .minhaFoto {
+  .images > .myFoto {
     width: 25vw;
   }
 
-  .imagens > .circuloColorido {
+  .images > .coloredCircle {
     right: 10vw;
     width: 35vw;
   }
@@ -74,31 +74,31 @@
     display: block;
   }
 
-  .titulo {
+  .title {
     margin-bottom: 2rem;
   }
 
-  .paragrafo {
+  .paragraph {
     margin-bottom: 2rem;
   }
 
-  .imagens {
+  .images {
     height: 307px;
   }
 
-  .imagens > .minhaFoto,
-  .imagens > .circuloColorido {
+  .images > .myFoto,
+  .images > .coloredCircle {
     left: 0;
     right: 0;
     margin: 0 auto;
   }
 
-  .imagens > .minhaFoto {
+  .images > .myFoto {
     width: 170px;
     transform: translate(5rem, 0px);
   }
 
-  .imagens > .circuloColorido {
+  .images > .coloredCircle {
     width: 240px;
     transform: translate(-1.5rem, 0px);
   }
