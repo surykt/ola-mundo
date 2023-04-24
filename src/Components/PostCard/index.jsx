@@ -1,8 +1,8 @@
-import React from "react"
-import styles from "./Post.module.css"
+import React from "react";
+import styles from "./Post.module.css";
 
-export default function Post({ post }) {
-  return(
+export default function PostCard({ post }) {
+  return (
     <div className={styles.post}>
       <img
         className={styles.cover}
@@ -12,5 +12,5 @@ export default function Post({ post }) {
       <h2 className={styles.title}>{post.title}</h2>
       <button className={styles.readButton}>Ler</button>
     </div>
-  )
+  );
 }
