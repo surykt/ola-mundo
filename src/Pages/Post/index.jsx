@@ -1,6 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import posts from "../../Json/posts.json";
+import PostModel from "Components/PostModel";
 
 export default function Post() {
   const parameters = useParams();
@@ -11,5 +12,12 @@ export default function Post() {
 
   console.log(post);
 
-  return <h1>{post.title}</h1>;
+  return(
+    <PostModel
+      photoCover={`/assets/posts/${post.id}/capa.png`}
+      title={post.title}
+    >
+
+    </PostModel>
+  );
 }
