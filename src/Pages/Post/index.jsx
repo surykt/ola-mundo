@@ -12,7 +12,9 @@ export default function Post() {
     return post.id === paramId;
   });
 
-  console.log(post);
+  if(!post) {
+    return <h1>Página não encontrada</h1>
+  }
 
   return(
     <PostModel
