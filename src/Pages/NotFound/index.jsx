@@ -2,8 +2,10 @@ import React from "react"
 import styles from "./NotFound.module.css"
 import erro404 from "../../assets/erro_404.png"
 import PrincipalButton from "Components/PrincipalButton"
+import { useNavigate } from "react-router"
 
 export default function NotFound() {
+  const navigate = useNavigate()
   return(
     <>
       <div className={styles.contentContainer}>
@@ -13,7 +15,7 @@ export default function NotFound() {
             Tem certeza que era isso que estava procurando?
         </p>
         <p className={styles.paragraph}>Aguarde alguns instantes e recarregue a página ou volte para a página inicial!</p>
-        <div className={styles.buttonContainer}>
+        <div className={styles.buttonContainer} onClick={() => navigate(-1)}>
           <PrincipalButton children="Voltar" size="lg" />
         </div>
         <img
