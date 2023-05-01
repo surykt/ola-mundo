@@ -1,6 +1,7 @@
 import React from "react"
 import styles from "./NotFound.module.css"
 import erro404 from "../../assets/erro_404.png"
+import PrincipalButton from "Components/PrincipalButton"
 
 export default function NotFound() {
   return(
@@ -13,7 +14,7 @@ export default function NotFound() {
         </p>
         <p className={styles.paragraph}>Aguarde alguns instantes e recarregue a página ou volte para a página inicial!</p>
         <div className={styles.buttonContainer}>
-          <button>Voltar</button>
+          <PrincipalButton children="Voltar" size="lg" />
         </div>
         <img
           className={styles.dogImage}

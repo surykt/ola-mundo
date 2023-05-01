@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "./Post.module.css";
+import PrincipalButton from "Components/PrincipalButton";
 
 export default function PostCard({ post }) {
   return (
@@ -10,7 +11,7 @@ export default function PostCard({ post }) {
         alt="Imagem de capa do post"
       />
       <h2 className={styles.title}>{post.title}</h2>
-      <button className={styles.readButton}>Ler</button>
+      <PrincipalButton children="Ler" />
     </div>
   );
 }
